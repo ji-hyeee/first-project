@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
     <main>
         <!-- main title -->
@@ -17,15 +23,11 @@
                 <div class="form__input--wrapper">
                     <div class="form__input--name">
                         <label for="name">name:</label>
-                        <input type="text" name="name" id="name" required>
-                    </div>
-                    <div class="form__input--title">
-                        <label for="name">title:</label>
-                        <input type="text" name="name" id="name" required>
+                        <input type="text" name="name" id="name" placeholder="your name" required>
                     </div>
                     <div class="form__textbox">
                         <label for="story">chat:</label>
-                        <textarea name="story" id="story" placeholder="tlak to me" required></textarea>
+                        <textarea name="story" id="story" placeholder="just chat" required></textarea>
                     </div>
                 </div>
                 <div class="form__submit">
@@ -38,19 +40,16 @@
             <ul class="discussions__container">
                 <li class="discussion__container">
                     <div class="discussion__avatar--wrapper">
-                        <img class="discussion__avatar--image"
-                            src="" alt="avatar img">
+                        <img class="discussion__avatar--image" src="./image.jpeg" alt="avatar img">
                     </div>
                     <div class="discussion__content">
-                        <h2 class="discussion__title">반갑습니다</h2>
-                        <div class="discussion__information">JiHye / 00:00</div>
-                    </div>
-                    <div class="discussion__answerred">
-                        <p>네 반가워요</p>
+                        <p class="discussion__chat">안녕하세요</p>
+                        <div class="discussion__information">JiHye / <p class="clock">00:00</p></div>
                     </div>
                 </li>
             </ul>
         </section>
     </main>
 </body>
+
 </html>
