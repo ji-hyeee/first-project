@@ -1,124 +1,172 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Yeon Sung', cursive;
 }
 
-ol, ul, li{
+ol,
+ul,
+li {
     list-style: none;
 }
 
+:root {
+    /* color */
+    --background-color-white1: rgb(225, 243, 255);
+    --background-color-white2: white;
+    --background-color-white3: #e9f5ff;
+    --background-color-blue1: rgb(151, 191, 255);
+    --background-color-blue2: rgb(200, 227, 255);
+    --border-color-white1: rgb(202, 202, 202);
+
+    /* size */
+    /* font-size */
+    --font-1rem: 1.3rem;
+    --font-2rem: 2.5rem;
+
+    /* width */
+    --width-30rem: 30rem;
+    --width-20rem: 20rem;
+    --width-17rem: 17rem;
+    --width-5rem: 5rem;
+    --width-4rem: 4rem;
+
+    /* height */
+    --height-4rem: 4.5rem;
+
+    /* margin */
+    --margin-top-1rem: 1rem;
+    --margin-bottom-1rem: 1rem;
+    --margin-right-1rem: 1rem;
+
+    /* padding */
+    --padding-all-0rem: 0.5rem;
+    --padding-all-1rem: 1rem;
+    --padding-left-0rem: 0.5rem;
+
+    /* border-radius */
+    --border-radius-1rem: 1rem;
+    --border-radius-0rem: 0.3rem;
+}
+
 /* main */
-main{
-    width: 30rem;
+main {
+    width: var(--width-30rem);
     margin: 0 auto;
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: rgb(225, 243, 255);
-    border-radius: 1rem;
+    margin-top: var(--margin-top-1rem);
+    padding: var(--padding-all-1rem);
+    background-color: var(--background-color-white1);
+    border-radius: var(--border-radius-1rem);
 }
 
 /* main title */
-h3{
+h3 {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: var(--font-2rem);
 }
 
 /* form section*/
-.form_container{
+.form_container {
     /* border: 1px solid red; */
-    padding: 0.5rem;
-    margin-top: 1rem;
+    padding: var(--padding-all-0rem);
+    margin-top: var(--margin-top-1rem);
 }
 
-.form{
+.form {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.form__input--wrapper{
+.form__input--wrapper {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    margin-right: 1rem;
-    height: 4.5rem;
+    margin-right: var(--margin-right-1rem);
+    height: var(--height-4rem);
 }
 
 .form__input--name,
-.form__textbox{
+.form__textbox {
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-    font-size: 1.3rem;
+    font-size: var(--font-1rem);
 }
 
-#name, #story{
-    width:17rem;
-    padding-left: 0.4rem;
-    border: 1px solid rgb(202, 202, 202);
-    border-radius: 0.3rem;
+#name,
+#story {
+    width: var(--width-17rem);
+    padding-left: var(--padding-left-0rem);
+    border: 1px solid var(--border-color-white1);
+    border-radius: var(--border-radius-0rem);
 }
 
-.form__submit{
+.form__submit {
     /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 5rem;
+    width: var(--width-5rem);
 }
-.form__submit input{
-    height: 4.5rem;
-    font-size: 1.3rem;
+
+.form__submit input {
+    height: var(--height-4rem);
+    font-size: var(--font-1rem);
     border: none;
-    border-radius: 0.5rem;
-    background: rgb(151, 191, 255);
+    border-radius: var(--border-radius-0rem);
+    background-color: var(--background-color-blue1);
 }
 
 
 /* discussion section */
-.discussion__wrapper{
+.discussion__wrapper {
     /* border: 1px solid red; */
-    padding: 0.5rem;
-    margin-top: 0.5rem;
+    padding: var(--padding-all-0rem);
+    margin-top: var(--margin-top-1rem);
 }
 
-.discussion__container{
+.discussion__container {
     display: flex;
     justify-content: space-between;
-    background: white;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    box-shadow: 0.3rem 0.3rem 0.5rem rgb(200, 227, 255), -0.1rem -0.1rem 1rem #e9f5ff;
+    padding: var(--padding-all-0rem);
+    margin-bottom: var(--margin-bottom-1rem);
+    border-radius: var(--border-radius-1rem);
+    background-color: var(--background-color-white2);
+    box-shadow: 0.3rem 0.3rem 0.5rem var(--background-color-blue2), -0.1rem -0.1rem 1rem var(--background-color-white3)
 }
 
-.discussion__avatar--wrapper{
+.discussion__container:last-child {
+    margin-bottom: 0;
+}
+
+.discussion__avatar--wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.discussion__avatar--image{
+.discussion__avatar--image {
     /* border: 1px solid red; */
     border-radius: 100%;
 }
 
-img{
-    width: 4rem;
+img {
+    width: var(--width-4rem);
 }
 
-.discussion__content{
+.discussion__content {
     /* border: 1px solid red; */
-    width: 20rem;
+    width: var(--width-20rem);
 }
 
-.discussion__chat{
-    font-size: 1.3rem;
+.discussion__chat {
+    font-size: var(--font-1rem);
 }
 
-.clock{
+.clock {
     display: inline-block;
 }

@@ -87,3 +87,8 @@ submit.addEventListener("click", (e) => {
 
     return false;
 });
+
+
+// 시계 추가하기 !
+const clock = document.querySelector('.clock');
+clock.textContent = new Date().toLocaleTimeString();
